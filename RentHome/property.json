@@ -1,0 +1,51 @@
+[
+  {
+    "prpertyId": 1,
+    "properttype": "Apartment",
+    "propertystatus": "Available",
+    "area": "Dublin",
+    "image": "../Images/Image6.jpeg"
+  },
+  {
+    "prpertyId": 2,
+    "properttype": "Villa",
+    "propertystatus": "Available",
+    "area": "Dublin",
+    "image": "../Images/Image7.jpeg"
+  },
+  {
+    "prpertyId": 3,
+    "properttype": "Apartment",
+    "propertystatus": "Sold",
+    "area": "Cork",
+    "image": "../Images/Image8.jpeg"
+  },
+  {
+    "prpertyId": 4,
+    "properttype": "Villa",
+    "propertystatus": "Available",
+    "area": "Dublin",
+    "image": "../Images/Image2.jpeg"
+  },
+  {
+    "prpertyId": 5,
+    "properttype": "Apartment",
+    "propertystatus": "Available",
+    "area": "Galway",
+    "image": "../Images/Image3.jpeg"
+  },
+  {
+    "prpertyId": 6,
+    "properttype": "Villa",
+    "propertystatus": "Sold",
+    "area": "Dublin",
+    "image": "../Images/Image4.jpeg"
+  },
+  {
+    "prpertyId": 6,
+    "properttype": "Apartment",
+    "propertystatus": "Available",
+    "area": "Cork",
+    "image": "../Images/Image5.jpeg"
+  }
+]   
