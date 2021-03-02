@@ -64,14 +64,12 @@ namespace RentHome.Controllers
         string apiResponse = string.Empty;
         try
         {
-            var client = new RestClient("https://zillowdimashirokovv1.p.rapidapi.com/getDeepComps.htm");
-            var request = new RestRequest(Method.POST);
-            request.AddHeader("content-type", "application/x-www-form-urlencoded");
-            request.AddHeader("x-rapidapi-key", "20094f3d8amshbdef4d5a86afa6bp1efcbajsnf5c577d71047");
-            request.AddHeader("x-rapidapi-host", "ZillowdimashirokovV1.p.rapidapi.com");
-            request.AddParameter("application/x-www-form-urlencoded", "zpid=%3CREQUIRED%3E&rentzestimate=true%2Cfalse&count=%3CREQUIRED%3E&zws-Id=%3CREQUIRED%3E", ParameterType.RequestBody);
-            IRestResponse response = client.Execute(request);
-        }
+                var client = new RestClient("https://mashvisor-api.p.rapidapi.com/rental-rates?state=CA&source=airbnb&city=Los%20Angeles&zip_code=90291");
+                var request = new RestRequest(Method.GET);
+                request.AddHeader("x-rapidapi-key", "20094f3d8amshbdef4d5a86afa6bp1efcbajsnf5c577d71047");
+                request.AddHeader("x-rapidapi-host", "mashvisor-api.p.rapidapi.com");
+                IRestResponse response = client.Execute(request);
+            }
         catch (IOException ioex)
         {
             Console.WriteLine(ioex.Message);

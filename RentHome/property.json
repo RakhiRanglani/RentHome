@@ -4,6 +4,7 @@
     "properttype": "Apartment",
     "propertystatus": "Available",
     "area": "Dublin",
+    "price": "400 euros / month",
     "image": "../Images/Image6.jpeg"
   },
   {
@@ -11,6 +12,7 @@
     "properttype": "Villa",
     "propertystatus": "Available",
     "area": "Dublin",
+    "price": "400 euros / month",
     "image": "../Images/Image7.jpeg"
   },
   {
@@ -18,6 +20,7 @@
     "properttype": "Apartment",
     "propertystatus": "Sold",
     "area": "Cork",
+    "price": "400 euros / month",
     "image": "../Images/Image8.jpeg"
   },
   {
@@ -25,6 +28,7 @@
     "properttype": "Villa",
     "propertystatus": "Available",
     "area": "Dublin",
+    "price": "400 euros / month",
     "image": "../Images/Image2.jpeg"
   },
   {
@@ -32,6 +36,7 @@
     "properttype": "Apartment",
     "propertystatus": "Available",
     "area": "Galway",
+    "price": "400 euros / month",
     "image": "../Images/Image3.jpeg"
   },
   {
@@ -39,6 +44,7 @@
     "properttype": "Villa",
     "propertystatus": "Sold",
     "area": "Dublin",
+    "price": "400 euros / month",
     "image": "../Images/Image4.jpeg"
   },
   {
@@ -46,6 +52,7 @@
     "properttype": "Apartment",
     "propertystatus": "Available",
     "area": "Cork",
+    "price": "400 euros / month",
     "image": "../Images/Image5.jpeg"
   }
 ]   

@@ -44,10 +44,11 @@ function propertyBuildTableRow(item) {
   
     var imageitem = '<a href="' + item.image + '"><img src="' + item.image + '"/></a>';
     var ret = "<tr>" +
+        "<td>" + imageitem + "</td>" +
         "<td>" + item.properttype + "</td>" +
         "<td>" + item.propertystatus + "</td>" +
         "<td>" + item.area + "</td>" +
-        "<td>" + imageitem + "</td>" +
+        "<td>" + item.price + "</td>" +
         "</tr>";
 
     return ret;

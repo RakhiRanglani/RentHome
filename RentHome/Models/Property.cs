@@ -12,5 +12,6 @@ namespace RentHome.Models
         public string propertystatus { get; set; }
         public string area { get; set; }
         public string image { get; set; }
+        public string price { get; set; }
     }
 }
