@@ -7,7 +7,12 @@
     <script src="../Scripts/bootstrap.min.js"></script>
     <script src="../Scripts/homepage.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/homepage.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
 </head>
 <body>
     <div class="container">
@@ -16,14 +21,17 @@
                 <div class="panel panel-primary">
                     <div class="panel-heading">  Property Information</div>
                     <div class="panel-body">
-                        <table id="propertyTable" class="table table-bordered table-condensed table-striped">
+                        <p>Type something in the input field to search the table for Property type,Location,Price and Property Status:</p>
+                        <input class="form-control" id="myInput" type="text" placeholder="Search..">
+                        <br>
+                        <table id="propertyTable" class="table table-bordered table-condensed table-striped"  data-toggle="table">
                             <thead>
                                 <tr class="trwidth">
-                                    <th class="tdwidth">Image</th>
-                                    <th class="tdwidth">Property Type</th>
-                                    <th class="tdwidth">Property Status</th>
-                                    <th class="tdwidth">Location</th>
-                                    <th class="tdwidth">Price</th>
+                                    <th class="tdwidth" data-order='desc' data-field="img" data-sortable="true">Image</th>
+                                    <th class="tdwidth" data-order='desc' data-field="proptyp" data-sortable="true">Property Type</th>
+                                    <th class="tdwidth" data-order='desc' data-field="propstat" data-sortable="true">Property Status</th>
+                                    <th class="tdwidth" data-order='desc' data-field="loc" data-sortable="true">Location</th>
+                                    <th class="tdwidth" data-order='desc' data-field="price" data-sortable="true">Price</th>
                                 </tr>
                             </thead>
                         </table>

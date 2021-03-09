@@ -1,6 +1,7 @@
 ﻿$(document).ready(function () {
     propertyList();
-
+    applysortingontable();
+    ;
 });
 
 // Get all property to display
@@ -25,15 +26,17 @@ function propertyListSuccess(item) {
     $.each(item, function (index, property) {
         // Add a row to the Property table
         propertyAddRow(property);
-       
+
     });
 }
+
+
 
 // Add Property row to <table>
 function propertyAddRow(item) {
     // First check if a <tbody> tag exists, add one if not
     if ($("#propertyTable tbody").length == 0) {
-        $("#propertyTable").append("<tbody></tbody>");
+        $("#propertyTable").append("<tbody id='fbody'></tbody>");
     }
 
     // Append row to <table>
@@ -43,7 +46,7 @@ function propertyAddRow(item) {
 
 // Build a <tr> for a row of table data
 function propertyBuildTableRow(item) {
-  
+
     var imageitem = '<a href="' + item.image + '"><img id="mapfile-image" class="imglist" src="' + item.image + '"/></a>';
     var ret = "<tr>" +
         "<td>" + imageitem + "</td>" +
@@ -52,16 +55,45 @@ function propertyBuildTableRow(item) {
         "<td>" + item.area + "</td>" +
         "<td>" + item.price + "</td>" +
         "</tr>";
-   
+
     return ret;
 }
+// Apply filter condition on the columns
 
 function applysortingontable() {
+    $("#myInput").keyup(function () {
+        //split the current value of searchInput
+        var data = this.value.split(" ");
+        //create a jquery object of the rows
+        var jo = $("#fbody").find("tr");
+        if (this.value == "") {
+            jo.show();
+            return;
+        }
+        //hide all the rows
+        jo.hide();
 
-}
-
-// Handle click event on Update button
-function updateClick() {
+        //Recusively filter the jquery object to get results.
+        jo.filter(function (i, v) {
+            var $t = $(this);
+            for (var d = 0; d < data.length; ++d) {
+                if ($t.text().toLowerCase().indexOf(data[d].toLowerCase()) > -1) {
+                    return true;
+                }
+            }
+            return false;
+        })
+            //show the rows that match.
+            .show();
+    }).focus(function () {
+        this.value = "";
+        $(this).css({
+            "color": "black"
+        });
+        $(this).unbind('focus');
+    }).css({
+        "color": "#C0C0C0"
+    });
 }
 
 // Handle click event on Add button
