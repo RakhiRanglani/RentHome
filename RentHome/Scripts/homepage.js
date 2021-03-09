@@ -1,5 +1,6 @@
 ﻿$(document).ready(function () {
     propertyList();
+
 });
 
 // Get all property to display
@@ -24,6 +25,7 @@ function propertyListSuccess(item) {
     $.each(item, function (index, property) {
         // Add a row to the Property table
         propertyAddRow(property);
+       
     });
 }
 
@@ -42,7 +44,7 @@ function propertyAddRow(item) {
 // Build a <tr> for a row of table data
 function propertyBuildTableRow(item) {
   
-    var imageitem = '<a href="' + item.image + '"><img src="' + item.image + '"/></a>';
+    var imageitem = '<a href="' + item.image + '"><img id="mapfile-image" class="imglist" src="' + item.image + '"/></a>';
     var ret = "<tr>" +
         "<td>" + imageitem + "</td>" +
         "<td>" + item.properttype + "</td>" +
@@ -50,10 +52,13 @@ function propertyBuildTableRow(item) {
         "<td>" + item.area + "</td>" +
         "<td>" + item.price + "</td>" +
         "</tr>";
-
+   
     return ret;
 }
 
+function applysortingontable() {
+
+}
 
 // Handle click event on Update button
 function updateClick() {

@@ -3,3 +3,16 @@
     width: 208%;
     height: 700px
 }
+.imglist {
+    border-radius: 45px;
+    background-repeat: repeat;
+    padding: 5px;
+    width: 100% !important;
+    height: auto;
+}
+.tdwidth{
+    width:20%!important;
+}
+.trwidth {
+    width: 100% !important;
+}

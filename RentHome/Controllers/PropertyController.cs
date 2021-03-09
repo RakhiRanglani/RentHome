@@ -20,6 +20,7 @@ namespace RentHome.Controllers
         public static List<string> InvalidJsonElements;
         // GET api/<controller>
         [System.Web.Http.HttpGet()]
+        [EnableCors(origins: "https://renthome20210304012055.azurewebsites.net/HtmlFile/HomePage.html", headers: "*", methods: "*")]
         public IHttpActionResult Get()
         {
             IHttpActionResult ret = null;
