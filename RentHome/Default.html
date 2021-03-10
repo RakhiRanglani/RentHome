@@ -7,18 +7,119 @@
     <script src="../Scripts/jquery-1.11.0.min.js"></script>
     <script src="../Scripts/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/homepage.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <style>
+        body, html {
+            height: 100%;
+            font-family: "Inconsolata", sans-serif;
+        }
+
+        .bgimg {
+            background-position: center;
+            background-size: cover;
+            background-image: url("Images/logo.jpg");
+            min-height: 75%;
+        }
+        
+        .menu {
+            display: none;
+        }
+    </style>
 </head>
 <body>
- <div class="container" style="width:100%">
-        <div class="row" style="width:100%">
-            <div class="col-md-6">
-                <div style="width:100%">
-                    <a href="HtmlFile/HomePage.html">
-                        <img src="Images/image5.jpg" alt="homepage" class="imgstyle">
-                    </a>
-                </div>
+    <!-- Links (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-row w3-padding w3-black">
+            <div class="w3-col s4">
+                <a href="HtmlFile/HomePage.html" class="w3-button w3-block w3-black">Search your Home</a>
             </div>
+            <div class="w3-col s4">
+                <a href="#about" class="w3-button w3-block w3-black">Login</a>
+            </div>
+            <div class="w3-col s4" id="getintouch">
+                <a href="#menu" class="w3-button w3-block w3-black">Get in Touch</a>
+            </div>
+
         </div>
     </div>
+
+    <!-- Header with image -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+            <span class="w3-tag">Find your Next Home...</span>
+        </div>
+
+        <div class="w3-display-bottomright w3-center w3-padding-large">
+            <span class="w3-text-white">Around the Ireland</span>
+        </div>
+    </header>
+
+    <!-- Add a background color and large text to the whole page -->
+    <div class="w3-sand w3-grayscale w3-large">
+
+        <!-- About Container -->
+        <div class="w3-container" id="about">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE RENTHOME.COM</span></h5>
+                <p>
+                    RentHome.com was first launched over ten years ago, just before the rentals boom. Back then when people where looking for houses to rent or apartments to rent, they had to look at the local evening newspaper. With the success of property to let websites like Daft, the internet is now the primary way people rent in Dublin and across Ireland.
+                </p>
+                <p>
+                    In 2008, RentHome.com relaunched as Ireland's newest and freshest lettings website offering renters an alternative to the Daft lettings section when looking for rental accommodation and flatshares. We are focusing the site at 18-25 year olds and aim to be the top renting website in the top three areas of the Irish to let market: the Dublin rent area extending out into the commuter towns, the Cork rent area including West Cork and finally the Galway rent area including Salthill and Knocknacarra.
+                </p>
+                <p>
+                    RentHome.com is really easy-to-use and has a fantastic range of houses for rent and apartments for rent to choose from in every town in Ireland. You can even get up-to-the-minute updates on the most recently added properties in your area with our RSS feeds, just click on the RSS icon on the top of the search results.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- Contact/Area Container -->
+        <div class="w3-container" id="inquiryarea" style="padding-bottom:32px;">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Email your Query</span></h5>
+                <p>Our executive will get in touch you soon...</p>
+
+                <p><span class="w3-tag">FYI!</span> We understand your needs and we will cater the service to satisfy the biggerst criteria of them all, both look and feel.</p>
+
+                <form action="/Default.html">
+                    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+                    <p><button class="w3-button w3-black" id="btnsubmit" type="submit">SUBMIT</button></p>
+                </form>
+            </div>
+        </div>
+
+        <!-- End page content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+        <p>
+            © Rent Home Media Limited 1997-2021.Registered in Ireland under Company Number 347856
+        </p>
+    </footer>
+
+  
+   <script>
+       $(document).ready(function () {
+           $("#getintouch").on("click", function (e) {
+
+               e.preventDefault();
+               $("html, body").scrollTop($("#inquiryarea").offset().top);
+               
+           });
+           $('#btnsubmit').click(function () {
+               location.reload();
+           });
+       });
+       
+    </script>
+
+
 </body>
+
 </html>
