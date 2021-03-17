@@ -1,14 +1,21 @@
 ﻿$(document).ready(function () {
     propertyList();
     applysortingontable();
-    ;
+    $('#propertyTable').on('click', '.clickable-row', function (event) {
+        $(this).addClass('active').siblings().removeClass('active');
+        var rowidex = this.rowIndex;
+        // passing the parameter in the url so that we can load different data for different property
+        document.location.href = '/HtmlFile/PropertyDetail.html'+'?param=' + rowidex
+     
+    });
+   
 });
 
 // Get all property to display
 function propertyList() {
     // Call Web API to get a list of Properties
     $.ajax({
-        url: '/api/Property/',
+        url: '/api/Property/GetProperty',
         type: 'GET',
         dataType: 'json',
         success: function (item) {
@@ -30,8 +37,6 @@ function propertyListSuccess(item) {
     });
 }
 
-
-
 // Add Property row to <table>
 function propertyAddRow(item) {
     // First check if a <tbody> tag exists, add one if not
@@ -48,7 +53,7 @@ function propertyAddRow(item) {
 function propertyBuildTableRow(item) {
 
     var imageitem = '<a href="' + item.image + '"><img id="mapfile-image" class="imglist" src="' + item.image + '"/></a>';
-    var ret = "<tr>" +
+    var ret = "<tr class='clickable-row'>" +
         "<td>" + imageitem + "</td>" +
         "<td>" + item.properttype + "</td>" +
         "<td>" + item.propertystatus + "</td>" +

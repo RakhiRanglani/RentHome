@@ -1,0 +1,12 @@
+﻿.imglist {
+    border-radius: 45px;
+    background-repeat: repeat;
+    padding: 5px;
+    width: 60% !important;
+    height: 50% !important;
+}
+
+.carousel {
+    position: relative;
+    width: 40%;
+}

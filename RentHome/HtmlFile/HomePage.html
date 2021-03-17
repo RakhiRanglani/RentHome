@@ -8,19 +8,36 @@
     <script src="../Scripts/homepage.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/homepage.css" />
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-2">
+                <div id=slideset2>
+                    <div>
+                        <h1>This is slide 1</h1>
+                        <p>Slide 1
+                        <p>It has a <a href="./">link.</a>
+                    </div>
+                    <div>
+                        <h1>This is the second slide</h1>
+                        <p>Second slide
+                    </div>
+                    <div>
+                        <h1>This is slide number 3</h1>
+                        <p>Slide number 3
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
                 <div class="panel panel-primary">
                     <div class="panel-heading">  Property Information</div>
                     <div class="panel-body">
                         <p>Type something in the input field to search the table for Property type,Location,Price and Property Status:</p>
                         <input class="form-control" id="myInput" type="text" placeholder="Search..">
                         <br>
-                        <table id="propertyTable" class="table table-bordered table-condensed table-striped"  data-toggle="table">
+                        <table id="propertyTable" class="table table-bordered table-condensed table-striped" data-link="row" data-toggle="table">
                             <thead>
                                 <tr class="trwidth">
                                     <th class="tdwidth" data-order='desc' data-field="img" data-sortable="true">Image</th>
@@ -34,8 +51,25 @@
                     </div>
                 </div>
             </div>
+            <div class="col-sm-2">
+                <div id=slideset2>
+                    <div>
+                        <h1>This is slide 1</h1>
+                        <p>Slide 1
+                        <p>It has a <a href="./">link.</a>
+                    </div>
+                    <div>
+                        <h1>This is the second slide</h1>
+                        <p>Second slide
+                    </div>
+                    <div>
+                        <h1>This is slide number 3</h1>
+                        <p>Slide number 3
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-  
+
 </body>
 </html>

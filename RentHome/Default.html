@@ -1,63 +1,52 @@
-﻿<!DOCTYPE html>
-<html>
+﻿<html>
 <head>
     <meta charset="utf-8" />
     <title>Rent your house with us..</title>
     <link href="../Content/bootstrap.css" rel="stylesheet" />
     <script src="../Scripts/jquery-1.11.0.min.js"></script>
     <script src="../Scripts/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../css/homepage.css" />
+    <script src="../Scripts/default.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/default.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-    <style>
-        body, html {
-            height: 100%;
-            font-family: "Inconsolata", sans-serif;
-        }
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        .bgimg {
-            background-position: center;
-            background-size: cover;
-            background-image: url("Images/logo.jpg");
-            min-height: 75%;
-        }
-        
-        .menu {
-            display: none;
-        }
-    </style>
 </head>
 <body>
     <!-- Links (sit on top) -->
     <div class="w3-top">
         <div class="w3-row w3-padding w3-black">
-            <div class="w3-col s4">
+            <div class="w3-col s6">
                 <a href="HtmlFile/HomePage.html" class="w3-button w3-block w3-black">Search your Home</a>
             </div>
-            <div class="w3-col s4">
-                <a href="#about" class="w3-button w3-block w3-black">Login</a>
-            </div>
-            <div class="w3-col s4" id="getintouch">
+            
+            <div class="w3-col s6" id="getintouch">
                 <a href="#menu" class="w3-button w3-block w3-black">Get in Touch</a>
             </div>
 
         </div>
     </div>
 
-    <!-- Header with image -->
-    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+    <header class="bgimg" id="home">
         <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
-            <span class="w3-tag">Find your Next Home...</span>
+            <span class="w3-tag glow">Find your Next Home...</span>
         </div>
 
         <div class="w3-display-bottomright w3-center w3-padding-large">
-            <span class="w3-text-white">Around the Ireland</span>
+            <span class="w3-text-white glow">Around the Ireland</span>
         </div>
     </header>
 
     <!-- Add a background color and large text to the whole page -->
     <div class="w3-sand w3-grayscale w3-large">
-
+        <div class="icon-bar">
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="google"><i class="fa fa-google"></i></a>
+            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+        </div>
         <!-- About Container -->
         <div class="w3-container" id="about">
             <div class="w3-content" style="max-width:700px">
@@ -103,21 +92,6 @@
         </p>
     </footer>
 
-  
-   <script>
-       $(document).ready(function () {
-           $("#getintouch").on("click", function (e) {
-
-               e.preventDefault();
-               $("html, body").scrollTop($("#inquiryarea").offset().top);
-               
-           });
-           $('#btnsubmit').click(function () {
-               location.reload();
-           });
-       });
-       
-    </script>
 
 
 </body>

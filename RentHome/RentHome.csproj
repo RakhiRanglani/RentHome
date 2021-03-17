@@ -267,11 +267,14 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="css\default.css" />
+    <Content Include="css\propdetail.css" />
     <Content Include="css\homepage.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Default.html" />
     <Content Include="HtmlFile\HomePage.html" />
+    <Content Include="HtmlFile\PropertyDetail.html" />
     <Content Include="Images\bat1.jpeg" />
     <Content Include="Images\bat10.jpeg" />
     <Content Include="Images\bat2.jpeg" />
@@ -328,6 +331,8 @@
     <Content Include="Images\room9.jpeg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\default.js" />
+    <Content Include="Scripts\propertydetail.js" />
     <Content Include="Scripts\homepage.js" />
     <Content Include="Scripts\jquery-1.11.0.min.js" />
     <Content Include="Web.config" />
@@ -338,6 +343,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\PropertyDetails.cs" />
     <Compile Include="Models\Property.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -348,6 +354,7 @@
     <None Include="packages.config" />
     <Content Include="property.json" />
     <None Include="Properties\PublishProfiles\RentHome20210304012055 - Web Deploy.pubxml" />
+    <Content Include="propertydetails.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
