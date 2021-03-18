@@ -1,4 +1,5 @@
 ﻿
+using Grpc.Core;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using RentHome.Models;
@@ -69,7 +70,8 @@ namespace RentHome.Controllers
             InvalidJsonElements = null;
             try
             {
-                string jsonPath = "C:/Users/rakhi/source/repos/RentHome/RentHome/property.json";
+               
+                string jsonPath = AppDomain.CurrentDomain.BaseDirectory + "property.json";
                 // Call the deserializer  
                 validProperty = JsonConvert.DeserializeObject<List<Property>>(File.ReadAllText(jsonPath));
 
@@ -89,7 +91,7 @@ namespace RentHome.Controllers
             InvalidJsonElements = null;
             try
             {
-                string jsonPath = "C:/Users/rakhi/source/repos/RentHome/RentHome/propertydetails.json";
+                string jsonPath = AppDomain.CurrentDomain.BaseDirectory + "propertydetails.json";
                 // Call the deserializer  
                 validPropertyDetails = JsonConvert.DeserializeObject<List<PropertyDetails>>(File.ReadAllText(jsonPath));
 

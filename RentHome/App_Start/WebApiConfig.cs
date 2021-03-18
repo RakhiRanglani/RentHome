@@ -18,7 +18,7 @@ namespace RentHome
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(
-            name: "DefaultApi",
+            name: "GetProperty",
             routeTemplate: "api/{controller}/{id}",
             defaults: new { id = RouteParameter.Optional }
            );
