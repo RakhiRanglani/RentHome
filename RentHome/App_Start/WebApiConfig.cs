@@ -12,21 +12,26 @@ namespace RentHome
         public static void Register(HttpConfiguration config)
         {
             //to enable crosssite origin
-            config.EnableCors();
+          //  config.EnableCors();
 
-            config.Routes.Clear();
+           // config.Routes.Clear();
             config.MapHttpAttributeRoutes();
-
             config.Routes.MapHttpRoute(
             name: "DefaultApi",
             routeTemplate: "api/{controller}/{id}",
             defaults: new { id = RouteParameter.Optional }
-           );
-            config.Routes.MapHttpRoute(
-            name: "GetPropertyDetails",
-            routeTemplate: "api/{controller}/{action}/{id}",
-             defaults: new { id = RouteParameter.Optional }
-            );
+        );
+       
+            // config.Routes.MapHttpRoute(
+            // name: "DefaultApi",
+            // routeTemplate: "api/{controller}/{id}",
+            // defaults: new { id = RouteParameter.Optional }
+            //);
+            // config.Routes.MapHttpRoute(
+            // name: "GetPropertyDetails",
+            // routeTemplate: "api/{controller}/{action}/{id}",
+            //  defaults: new { id = RouteParameter.Optional }
+            // );
 
         }
     }

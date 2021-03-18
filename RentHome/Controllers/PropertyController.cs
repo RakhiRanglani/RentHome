@@ -13,7 +13,7 @@ using System.Web.Http.Cors;
 
 namespace RentHome.Controllers
 {
-    [EnableCors(origins: "https://renthome20210304012055.azurewebsites.net", headers: "*", methods: "*")]
+   // [EnableCors(origins: "https://renthome20210304012055.azurewebsites.net", headers: "*", methods: "*")]
 
     [RoutePrefix("api/Property")]
     public class PropertyController : ApiController
@@ -21,10 +21,11 @@ namespace RentHome.Controllers
 
         public static List<string> InvalidJsonElements;
         // GET api/<controller>
-        [System.Web.Http.HttpGet()]
-        [EnableCors(origins: "https://renthome20210304012055.azurewebsites.net/HtmlFile/HomePage.html", headers: "*", methods: "*")]
-        // [ActionName("GetProperty")]
-        [Route("GetProperty")]
+     
+        // [EnableCors(origins: "https://renthome20210304012055.azurewebsites.net/HtmlFile/HomePage.html", headers: "*", methods: "*")]
+        [HttpGet]
+        [Route("~/api/Property/GetProperty")]
+       
         public IHttpActionResult GetProperty()
         {
             IHttpActionResult ret = null;
@@ -69,7 +70,9 @@ namespace RentHome.Controllers
             InvalidJsonElements = null;
             try
             {
-                string jsonPath = "C:/Users/rakhi/source/repos/RentHome/RentHome/property.json";
+                // string jsonPath = "C:/Users/rakhi/source/repos/RentHome/RentHome/property.json";
+                string jsonPath = "C:/Users/HP/Desktop/Github/RentHome/RentHome/property.json";
+                
                 // Call the deserializer  
                 validProperty = JsonConvert.DeserializeObject<List<Property>>(File.ReadAllText(jsonPath));
 
@@ -89,7 +92,8 @@ namespace RentHome.Controllers
             InvalidJsonElements = null;
             try
             {
-                string jsonPath = "C:/Users/rakhi/source/repos/RentHome/RentHome/propertydetails.json";
+                // string jsonPath = "C:/Users/rakhi/source/repos/RentHome/RentHome/propertydetails.json";
+                string jsonPath = "C:/Users/HP/Desktop/Github/RentHome/RentHome/propertydetails.json";
                 // Call the deserializer  
                 validPropertyDetails = JsonConvert.DeserializeObject<List<PropertyDetails>>(File.ReadAllText(jsonPath));
 

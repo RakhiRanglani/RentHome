@@ -59,6 +59,7 @@ function propertyBuildTableRow(item) {
         "<td>" + item.propertystatus + "</td>" +
         "<td>" + item.area + "</td>" +
         "<td>" + item.price + "</td>" +
+        "<td>" + item.buyorrent + "</td>" +
         "</tr>";
 
     return ret;

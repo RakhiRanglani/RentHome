@@ -5,6 +5,7 @@
     "propertystatus": "Available",
     "area": "Dublin",
     "price": "200 euros / week",
+    "buyorrent": "Buy",
     "image": "../Images/Image6.jpeg"
   },
   {
@@ -13,6 +14,7 @@
     "propertystatus": "Available",
     "area": "Dublin",
     "price": "400 euros / month",
+    "buyorrent": "Rent",
     "image": "../Images/Image7.jpeg"
   },
   {
@@ -21,6 +23,7 @@
     "propertystatus": "Sold",
     "area": "Cork",
     "price": "500 euros / month",
+    "buyorrent": "Buy",
     "image": "../Images/Image8.jpeg"
   },
   {
@@ -29,6 +32,7 @@
     "propertystatus": "Available",
     "area": "Dublin",
     "price": "400 euros / month",
+    "buyorrent": "Rent",
     "image": "../Images/Image2.jpeg"
   },
   {
@@ -37,6 +41,7 @@
     "propertystatus": "Available",
     "area": "Galway",
     "price": "650 euros / month",
+    "buyorrent": "Buy",
     "image": "../Images/Image3.jpeg"
   },
   {
@@ -45,6 +50,7 @@
     "propertystatus": "Sold",
     "area": "Dublin",
     "price": "487 euros / month",
+    "buyorrent": "Buy",
     "image": "../Images/Image4.jpeg"
   },
   {
@@ -53,6 +59,7 @@
     "propertystatus": "Available",
     "area": "Cork",
     "price": "350 euros / month",
+    "buyorrent": "Rent",
     "image": "../Images/Image5.jpeg"
   }
 ]   

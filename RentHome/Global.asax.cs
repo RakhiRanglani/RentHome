@@ -11,7 +11,7 @@ namespace RentHome
     {
         protected void Application_Start()
         {
-           // WebApiConfig.Register(GlobalConfiguration.Configuration);
+           
             GlobalConfiguration.Configure(WebApiConfig.Register);
         }
     }
