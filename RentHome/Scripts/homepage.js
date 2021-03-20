@@ -1,14 +1,7 @@
 ﻿$(document).ready(function () {
     propertyList();
     applysortingontable();
-    $('#propertyTable').on('click', '.clickable-row', function (event) {
-        $(this).addClass('active').siblings().removeClass('active');
-        var rowidex = this.rowIndex;
-        // passing the parameter in the url so that we can load different data for different property
-        document.location.href = '/HtmlFile/PropertyDetail.html'+'?param=' + rowidex
-     
-    });
-   
+  
 });
 
 // Get all property to display
