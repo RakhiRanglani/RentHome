@@ -36,49 +36,25 @@
 .trwidth {
     width: 100% !important;
 }
-#slideset2 {
-    height: 25em;
-    position: sticky;
+
+ul {
+    list-style: none;
+}
+
+#wrapper {
+    z-index: 1000;
     overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+    height: 100%;
     width: 100%;
 }
 
-#slideset2 > *
-{
-    position: absolute;
-    top: 100%;
-    left: 0;
-    animation: 12s autoplay2 infinite ease-in-out
-}
-@keyframes autoplay2 {
-    0% {
-        top: 100%
-    }
-
-    4% {
-        top: 0%
-    }
-
-    33.33% {
-        top: 0%
-    }
-
-    37.33% {
-        top: -100%
-    }
-
-    100% {
-        top: -100%
-    }
-}
-#slideset2 > *:nth-child(1) {
-    animation-delay: 0s
+.box {
+    position: fixed;
+    display: flex;
+    justify-content: left;
+    width: 100%;
 }
 
-#slideset2 > *:nth-child(2) {
-    animation-delay: 4s
-}
-
-#slideset2 > *:nth-child(3) {
-    animation-delay: 8s
-}

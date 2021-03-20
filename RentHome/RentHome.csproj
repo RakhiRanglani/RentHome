@@ -335,6 +335,7 @@
     <Content Include="Images\room7.jpeg" />
     <Content Include="Images\room8.jpeg" />
     <Content Include="Images\room9.jpeg" />
+    <Content Include="Images\slideposter.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\default.js" />

@@ -79,6 +79,7 @@
     background: #bb0000;
     color: white;
 }
+
 .glow {
     font-size: 17px;
     color: #fff;
@@ -95,6 +96,5 @@
 
     to {
         text-shadow: 0 0 10px #fff, 0 0 30px #ebe994, 0 0 40px #ff4da6, 0 0 50px #f3c791, 0 0 60px #4dff52, 0 0 70px #8bbe3a, 0 0 80px #cfa7cc;
-    
     }
 }

@@ -23,7 +23,8 @@ function propertyDetailList(rowindex) {
             $.each(item, function (index, property) {
                 if (rowindex == item[index].rowindex) {
                     //create crousal content
-                    createcrousalcontent(item[index])
+                    createcrousalcontent(item[index]);
+                    sethtml(item[index]);
                 }
             });
         },
@@ -44,6 +45,11 @@ function createcrousalcontent(item) {
     $('.item').first().addClass('active');
     $('.carousel-indicators > li').first().addClass('active');
     $('#myCarousel').carousel();
+}
+function sethtml(item) {
+
+    $('<p>' + item.propertydescription + '</p>').appendTo('#propdescription');
+
 }
 // Handle exceptions from AJAX calls
 function handleException(request, message, error) {
