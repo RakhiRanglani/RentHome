@@ -11,7 +11,7 @@
     background-repeat: repeat;
     padding: 5px;
     width: 100% !important;
-    height: 90% !important;
+    height: auto;
 }
 
 .panel-primary {
