@@ -273,12 +273,14 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="css\appointment.css" />
     <Content Include="css\default.css" />
     <Content Include="css\propdetail.css" />
     <Content Include="css\homepage.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Default.html" />
+    <Content Include="HtmlFile\AppointmentForm.html" />
     <Content Include="HtmlFile\HomePage.html" />
     <Content Include="HtmlFile\PropertyDetail.html" />
     <Content Include="Images\bat1.jpeg" />
@@ -336,6 +338,7 @@
     <Content Include="Images\room8.jpeg" />
     <Content Include="Images\room9.jpeg" />
     <Content Include="Images\slideposter.jpg" />
+    <Content Include="Scripts\appointment.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\default.js" />
@@ -373,7 +376,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

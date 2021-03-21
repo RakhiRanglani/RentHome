@@ -1,6 +1,10 @@
 ﻿$(document).ready(function () {
     var rowindex = getParameterByName('param');
     propertyDetailList(rowindex);
+   
+    $("#ddlappointment").click(function () {
+        document.location.href = '/HtmlFile/AppointmentForm.html';
+    });
 });
 // To get the parameter value
 function getParameterByName(name, url) {
