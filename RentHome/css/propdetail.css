@@ -7,9 +7,11 @@
 }
 .carousel-inner {
     position: relative;
-    width: 100%;
+    width: 80%;
     overflow: hidden;
-    padding-left: 10%;
+    margin-left: 15%;
+    height: 275px;
+}
 }
 .carousel {
     position: relative;
@@ -21,4 +23,14 @@
     background-size: cover;
     background-position: center center;
     width: 100%;
+}
+.leftlabel {
+    font-weight: bolder;
+    font-size: 17px;
+}
+.btn-dark {
+    background-color: black;
+    margin: 30px 10px 0px 43%;
+    color: white;
+    font-size: 18px;
 }

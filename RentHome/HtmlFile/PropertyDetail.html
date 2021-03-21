@@ -19,7 +19,7 @@
 <body>
 
     <div class="container">
-        <h2>Property Details</h2>
+        <h2 style="text-align: center;padding-bottom: 1%;">Property Details</h2>
         <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -31,20 +31,62 @@
             </div>
 
             <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="height: 50%;width: 10%;">
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="height: 94%;width: 10%;">
                 <span class="glyphicon glyphicon-chevron-left"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next" style="height: 50%;width: 10%;">
+            <a class="right carousel-control" href="#myCarousel" data-slide="next" style="height: 94%;width: 10%;">
                 <span class="glyphicon glyphicon-chevron-right"></span>
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <div class="w3-container" id="propdescription">
-         
+        <div style="padding-top: 1%;">
+            <table>
+                <tr><td><p class="leftlabel">Address</p></td><td class="w3-container" id="ddladdress"></td></tr>
+                <tr><td><p class="leftlabel">Bedrooms</p></td><td class="w3-container" id="ddlbedroom"></td></tr>
+                <tr><td><p class="leftlabel">Bathroom</p></td><td class="w3-container" id="ddlbath"></td></tr>
+                <tr><td><p class="leftlabel">Price</p></td><td class="w3-container" id="ddlprice"></td></tr>
+                <tr><td><p class="leftlabel">Descriptions</p></td><td class="w3-container" id="ddlpropdescription"></td></tr>
+            </table>
         </div>
-        </div>
+        <div><button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal">Make an Appointment</button></div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
 
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 style="color:red;"><span class="glyphicon glyphicon-lock"></span> Book an Appointment</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="usrname"><span class="glyphicon glyphicon-user"></span> Name</label>
+                                <input type="text" class="form-control" id="usrname" placeholder="Enter Name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email"><span class="glyphicon glyphicon-user"></span> Email Address</label>
+                                <input type="text" class="form-control" id="email" placeholder="Enter Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="phonenumber"><span class="glyphicon glyphicon-eye-open"></span> Phone Number</label>
+                                <input type="text" class="form-control" id="phonenumber" placeholder="Enter Phone Number">
+                            </div>
+                            
+                            <button type="submit" class="btn btn-default btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Sumbit </button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
 

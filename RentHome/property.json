@@ -4,7 +4,7 @@
     "properttype": "Apartment",
     "propertystatus": "Available",
     "area": "Dublin",
-    "price": "200 euros / week",
+    "price": "500000 euros",
     "buyorrent": "Buy",
     "image": "../Images/Image6.jpeg"
   },
@@ -13,7 +13,7 @@
     "properttype": "Villa",
     "propertystatus": "Available",
     "area": "Dublin",
-    "price": "400 euros / month",
+    "price": "2400 euros/month",
     "buyorrent": "Rent",
     "image": "../Images/Image7.jpeg"
   },
@@ -22,7 +22,7 @@
     "properttype": "Apartment",
     "propertystatus": "Sold",
     "area": "Cork",
-    "price": "500 euros / month",
+    "price": "600000 euros",
     "buyorrent": "Buy",
     "image": "../Images/Image8.jpeg"
   },
@@ -31,7 +31,7 @@
     "properttype": "Villa",
     "propertystatus": "Available",
     "area": "Dublin",
-    "price": "400 euros / month",
+    "price": "3000 euro/month",
     "buyorrent": "Rent",
     "image": "../Images/Image2.jpeg"
   },
@@ -40,7 +40,7 @@
     "properttype": "Apartment",
     "propertystatus": "Available",
     "area": "Galway",
-    "price": "650 euros / month",
+    "price": "65000 euros",
     "buyorrent": "Buy",
     "image": "../Images/Image3.jpeg"
   },
@@ -49,16 +49,16 @@
     "properttype": "Villa",
     "propertystatus": "Sold",
     "area": "Dublin",
-    "price": "487 euros / month",
+    "price": "487000 euros",
     "buyorrent": "Buy",
     "image": "../Images/Image4.jpeg"
   },
   {
-    "prpertyId": 6,
+    "prpertyId": 7,
     "properttype": "Apartment",
     "propertystatus": "Available",
     "area": "Cork",
-    "price": "350 euros / month",
+    "price": "2800 euros / month",
     "buyorrent": "Rent",
     "image": "../Images/Image5.jpeg"
   }

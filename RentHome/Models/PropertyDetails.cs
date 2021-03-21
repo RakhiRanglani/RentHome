@@ -15,5 +15,6 @@ namespace RentHome.Models
         public string address { get; set; }
         public string bedrooms { get; set; }
         public string bathroom { get; set; }
+        public string price { get; set; }
     }
 }

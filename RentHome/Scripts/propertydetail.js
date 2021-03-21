@@ -48,8 +48,11 @@ function createcrousalcontent(item) {
 }
 function sethtml(item) {
 
-    $('<p>' + item.propertydescription + '</p>').appendTo('#propdescription');
-
+    $('<p>' + item.propertydescription + '</p>').appendTo('#ddlpropdescription');
+    $('<p>' + item.address + '</p>').appendTo('#ddladdress');
+    $('<p>' + item.bedrooms + '</p>').appendTo('#ddlbedroom');
+    $('<p>' + item.bathroom + '</p>').appendTo('#ddlbath');
+    $('<p>' + item.price + '</p>').appendTo('#ddlprice');
 }
 // Handle exceptions from AJAX calls
 function handleException(request, message, error) {

@@ -6,8 +6,9 @@
     "img3": "../Images/bat1.jpeg",
     "propertydescription": "This attractive 3 bed semi detached home is ready for immediate occupation, there is no onward chain, the property is presented in neat decorative order throughout, and enjoys light filled accommodation by virtue of its south facing aspect. Located in a quiet cul de sac setting on the perimeter of the estate within easy access of the ring road, Dunnes, Kilnamanagh Shopping Centre, local schools, Church, public transport to include the Luas etc., The nearby Belgard and Greenhills Roads as well as the M50 provide ease of access to various routes. REGISTER your interest early to avoid disappointment.",
     "address": "8, Redwood Avenue, Kilnamanagh, Tallaght, Dublin 24",
-    "bedrooms": "2 Bedrroms",
-    "bathroom": "1"
+    "bedrooms": "2 Bedrooms",
+    "bathroom": "1",
+    "price": "500000 euros"
   },
   {
     "rowindex": 2,
@@ -16,8 +17,9 @@
     "img3": "../Images/bat1.jpeg",
     "propertydescription": "This attractive 3 bed semi detached home is ready for immediate occupation, there is no onward chain, the property is presented in neat decorative order throughout, and enjoys light filled accommodation by virtue of its south facing aspect. Located in a quiet cul de sac setting on the perimeter of the estate within easy access of the ring road, Dunnes, Kilnamanagh Shopping Centre, local schools, Church, public transport to include the Luas etc., The nearby Belgard and Greenhills Roads as well as the M50 provide ease of access to various routes. REGISTER your interest early to avoid disappointment.",
     "address": "8, Redwood Avenue, Kilnamanagh, Tallaght, Dublin 24",
-    "bedrooms": "2 Bedrroms",
-    "bathroom": "1"
+    "bedrooms": "3 Bedrooms",
+    "bathroom": "1",
+    "price": "2400 euros/month"
   },
   {
     "rowindex": 3,
@@ -26,8 +28,9 @@
     "img3": "../Images/bat1.jpeg",
     "propertydescription": "This attractive 3 bed semi detached home is ready for immediate occupation, there is no onward chain, the property is presented in neat decorative order throughout, and enjoys light filled accommodation by virtue of its south facing aspect. Located in a quiet cul de sac setting on the perimeter of the estate within easy access of the ring road, Dunnes, Kilnamanagh Shopping Centre, local schools, Church, public transport to include the Luas etc., The nearby Belgard and Greenhills Roads as well as the M50 provide ease of access to various routes. REGISTER your interest early to avoid disappointment.",
     "address": "8, Redwood Avenue, Kilnamanagh, Tallaght, Dublin 24",
-    "bedrooms": "2 Bedrroms",
-    "bathroom": "1"
+    "bedrooms": "2 Bedrooms",
+    "bathroom": "1",
+    "price": "600000 euros"
   },
   {
     "rowindex": 4,
@@ -37,7 +40,8 @@
     "propertydescription": "This attractive 3 bed semi detached home is ready for immediate occupation, there is no onward chain, the property is presented in neat decorative order throughout, and enjoys light filled accommodation by virtue of its south facing aspect. Located in a quiet cul de sac setting on the perimeter of the estate within easy access of the ring road, Dunnes, Kilnamanagh Shopping Centre, local schools, Church, public transport to include the Luas etc., The nearby Belgard and Greenhills Roads as well as the M50 provide ease of access to various routes. REGISTER your interest early to avoid disappointment.",
     "address": "8, Redwood Avenue, Kilnamanagh, Tallaght, Dublin 24",
     "bedrooms": "2 Bedrroms",
-    "bathroom": "1"
+    "bathroom": "1",
+    "price": "3000 euros/month"
   },
   {
     "rowindex": 5,
@@ -46,8 +50,9 @@
     "img3": "../Images/bat1.jpeg",
     "propertydescription": "This attractive 3 bed semi detached home is ready for immediate occupation, there is no onward chain, the property is presented in neat decorative order throughout, and enjoys light filled accommodation by virtue of its south facing aspect. Located in a quiet cul de sac setting on the perimeter of the estate within easy access of the ring road, Dunnes, Kilnamanagh Shopping Centre, local schools, Church, public transport to include the Luas etc., The nearby Belgard and Greenhills Roads as well as the M50 provide ease of access to various routes. REGISTER your interest early to avoid disappointment.",
     "address": "8, Redwood Avenue, Kilnamanagh, Tallaght, Dublin 24",
-    "bedrooms": "2 Bedrroms",
-    "bathroom": "1"
+    "bedrooms": "4 Bedrooms",
+    "bathroom": "1",
+    "price": "65000 euros"
   },
   {
     "rowindex": 6,
@@ -56,8 +61,9 @@
     "img3": "../Images/bat1.jpeg",
     "propertydescription": "This attractive 3 bed semi detached home is ready for immediate occupation, there is no onward chain, the property is presented in neat decorative order throughout, and enjoys light filled accommodation by virtue of its south facing aspect. Located in a quiet cul de sac setting on the perimeter of the estate within easy access of the ring road, Dunnes, Kilnamanagh Shopping Centre, local schools, Church, public transport to include the Luas etc., The nearby Belgard and Greenhills Roads as well as the M50 provide ease of access to various routes. REGISTER your interest early to avoid disappointment.",
     "address": "8, Redwood Avenue, Kilnamanagh, Tallaght, Dublin 24",
-    "bedrooms": "2 Bedrroms",
-    "bathroom": "1"
+    "bedrooms": "2 Bedrooms",
+    "bathroom": "1",
+    "price": "487000 euros"
   },
   {
     "rowindex": 7,
@@ -66,7 +72,8 @@
     "img3": "../Images/bat1.jpeg",
     "propertydescription": "This attractive 3 bed semi detached home is ready for immediate occupation, there is no onward chain, the property is presented in neat decorative order throughout, and enjoys light filled accommodation by virtue of its south facing aspect. Located in a quiet cul de sac setting on the perimeter of the estate within easy access of the ring road, Dunnes, Kilnamanagh Shopping Centre, local schools, Church, public transport to include the Luas etc., The nearby Belgard and Greenhills Roads as well as the M50 provide ease of access to various routes. REGISTER your interest early to avoid disappointment.",
     "address": "8, Redwood Avenue, Kilnamanagh, Tallaght, Dublin 24",
-    "bedrooms": "2 Bedrroms",
-    "bathroom": "1"
+    "bedrooms": "3 Bedrooms",
+    "bathroom": "1",
+    "price": "2800 euros/month"
   }
 ]   
