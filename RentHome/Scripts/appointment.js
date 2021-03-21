@@ -1,5 +1,13 @@
-﻿function validateForm() {
-   
+﻿
+$(document).ready(function () {
+
+    $('#btnsubmit').click(function () {
+        validateForm();
+    });
+});
+function validateForm() {
+
+    debugger;
     var name = document.getElementById('name').value;
     if (name == "") {
         document.querySelector('.status').innerHTML = "Name cannot be empty";

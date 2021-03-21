@@ -60,7 +60,7 @@
             <div class="col-sm-2">
                 <div id="wrapper">
                     <div class="box">
-                        <div class="loop_js2" id="loop_js2" style="transform: translate(-3%, 0%);">
+                        <div class="loop_js2" id="loop_js2" style="transform: translate(-10%, 0%);">
                             <ul>
                                 <li><a href="#"><img src="../Images/img9.jpeg" alt="" style="height: 50%;width: 50%;"></a></li>
                                 <li><a href="#"><img src="../Images/img10.jpeg" alt="" style="height: 50%;width: 50%;"></a></li>
@@ -118,36 +118,36 @@ $(function () {
           }
       });
 });
-        $(function () {
-    const loop = document.getElementById('loop_js2');
+//        $(function () {
+//    const loop = document.getElementById('loop_js2');
 
-    const loopAnim = new TimelineMax({
-      repeat: -1
-    });
+//    const loopAnim = new TimelineMax({
+//      repeat: -1
+//    });
 
-    let loopItem = (window.innerWidth, loop.children[0]);
-    loop.appendChild(loopItem.cloneNode(true));
-    loop.appendChild(loopItem.cloneNode(true));
-    loop.appendChild(loopItem.cloneNode(true));
-
-
-    loopAnim
-      .to(loop, 30, { ease: Power0.easeNone, yPercent: -66.66666 })
-      .to(loop, 0, { ease: Power0.easeNone, y: 0 });
+//    let loopItem = (window.innerWidth, loop.children[0]);
+//    loop.appendChild(loopItem.cloneNode(true));
+//    loop.appendChild(loopItem.cloneNode(true));
+//    loop.appendChild(loopItem.cloneNode(true));
 
 
+//    loopAnim
+//      .to(loop, 30, { ease: Power0.easeNone, yPercent: -66.66666 })
+//      .to(loop, 0, { ease: Power0.easeNone, y: 0 });
 
-    var mousewheelevent = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
-        $(document).on(mousewheelevent,function(e){
-            e.preventDefault();
-            var delta = e.originalEvent.deltaY ? -(e.originalEvent.deltaY) : e.originalEvent.wheelDelta ? e.originalEvent.wheelDelta : -(e.originalEvent.detail);
-            if (delta < 0){
-                loopAnim.time(loopAnim.time()+1);
-            } else {
-              loopAnim.time(loopAnim.time()-1);
-            }
-        });
-});
+
+
+//    var mousewheelevent = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
+//        $(document).on(mousewheelevent,function(e){
+//            e.preventDefault();
+//            var delta = e.originalEvent.deltaY ? -(e.originalEvent.deltaY) : e.originalEvent.wheelDelta ? e.originalEvent.wheelDelta : -(e.originalEvent.detail);
+//            if (delta < 0){
+//                loopAnim.time(loopAnim.time()+1);
+//            } else {
+//              loopAnim.time(loopAnim.time()-1);
+//            }
+//        });
+//});
     </script>
 
 </body>
