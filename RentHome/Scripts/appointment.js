@@ -8,16 +8,22 @@ $(document).ready(function () {
 function validateForm() {
 
     debugger;
-    var name = document.getElementById('name').value;
+    var name = document.getElementById('first').value;
     if (name == "") {
         document.querySelector('.status').innerHTML = "Name cannot be empty";
         return false;
+    } else {
+        document.querySelector('.status').innerHTML = "";
     }
-    var lname = document.getElementById('last').value;
-    if (lname == "") {
+
+    var lastname = document.getElementById('last').value;
+    if (lastname == "") {
         document.querySelector('.status').innerHTML = "Last Name cannot be empty";
         return false;
+    } else {
+        document.querySelector('.status').innerHTML = "";
     }
+
     var email = document.getElementById('email').value;
     if (email == "") {
         document.querySelector('.status').innerHTML = "Email cannot be empty";
@@ -30,7 +36,7 @@ function validateForm() {
         }
     }
     var phone = document.getElementById('phone').value;
-    var phoneno = /^\d{10}$/;
+    var phone = /^\d{10}$/;
     if (phone == "") {
         document.querySelector('.status').innerHTML = "Phone Number cannot be empty";
         return false;
@@ -40,11 +46,17 @@ function validateForm() {
         document.querySelector('.status').innerHTML = "Please enter 10 digit valid phone number";
         return false;
     }
-   
+
     var message = document.getElementById('message').value;
     if (message == "") {
         document.querySelector('.status').innerHTML = "Message cannot be empty";
         return false;
+    } else {
+        document.querySelector('.status').innerHTML = "";
     }
-    document.querySelector('.status').innerHTML = "Sending...";
+
+    {
+        document.querySelector('.status').innerHTML = "Sending...";
+    }
+
 }
