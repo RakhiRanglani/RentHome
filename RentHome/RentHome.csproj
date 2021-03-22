@@ -280,6 +280,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Default.html" />
+    <Content Include="HtmlFile\Thankyou.html" />
     <Content Include="HtmlFile\AppointmentForm.html" />
     <Content Include="HtmlFile\HomePage.html" />
     <Content Include="HtmlFile\PropertyDetail.html" />

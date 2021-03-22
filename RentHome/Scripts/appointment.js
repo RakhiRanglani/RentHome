@@ -1,19 +1,23 @@
 ﻿
 $(document).ready(function () {
-
+    var flag = false;
     $('#btnsubmit').click(function () {
-        validateForm();
+       flag= validateForm(false);
+        if (flag) {
+            document.location.href = '/HtmlFile/Thankyou.html';
+        }
     });
 });
-function validateForm() {
+function validateForm(flag) {
 
-    debugger;
     var name = document.getElementById('first').value;
     if (name == "") {
         document.querySelector('.status').innerHTML = "Name cannot be empty";
         return false;
     } else {
         document.querySelector('.status').innerHTML = "";
+        flag = true;
+      
     }
 
     var lastname = document.getElementById('last').value;
@@ -22,41 +26,41 @@ function validateForm() {
         return false;
     } else {
         document.querySelector('.status').innerHTML = "";
+        flag = true;
+       
     }
 
     var email = document.getElementById('email').value;
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
     if (email == "") {
         document.querySelector('.status').innerHTML = "Email cannot be empty";
         return false;
+    } else if (!re.test(email)) {
+        document.querySelector('.status').innerHTML = "Email Id is not in correct format";
+        return false;
     } else {
-        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        if (!re.test(email)) {
-            document.querySelector('.status').innerHTML = "Email format invalid";
-            return false;
-        }
+       
+        flag = true;
+    
     }
+
+
+
     var phone = document.getElementById('phone').value;
-    var phone = /^\d{10}$/;
+    var filter = /[1-9]{1}[0-9]{9}/;
     if (phone == "") {
         document.querySelector('.status').innerHTML = "Phone Number cannot be empty";
         return false;
     }
-    else (phone.match(phoneno))
-    {
+    if (phone.length == 10) {
+      
+        flag = true;
+      
+    } else {
         document.querySelector('.status').innerHTML = "Please enter 10 digit valid phone number";
         return false;
     }
-
-    var message = document.getElementById('message').value;
-    if (message == "") {
-        document.querySelector('.status').innerHTML = "Message cannot be empty";
-        return false;
-    } else {
-        document.querySelector('.status').innerHTML = "";
-    }
-
-    {
-        document.querySelector('.status').innerHTML = "Sending...";
-    }
-
+   
+    return flag;
 }
