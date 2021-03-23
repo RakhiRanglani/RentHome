@@ -5,6 +5,9 @@
     $("#ddlappointment").click(function () {
         document.location.href = '/HtmlFile/AppointmentForm.html';
     });
+    $("#ddlback").click(function () {
+        document.location.href = '/Default.html';
+    });
 });
 // To get the parameter value
 function getParameterByName(name, url) {

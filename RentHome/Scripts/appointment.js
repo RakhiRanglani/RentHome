@@ -2,11 +2,25 @@
 $(document).ready(function () {
     var flag = false;
     $('#btnsubmit').click(function () {
-       flag= validateForm(false);
+        flag = validateForm(false);
         if (flag) {
             document.location.href = '/HtmlFile/Thankyou.html';
         }
     });
+    $('#btnback').click(function () {
+        document.location.href = '/HtmlFile/Homepage.html';
+    });
+    $('#btnreset').click(function () {
+        $('#first').val(' ');
+        $('#last').val('');
+        $('#email').val('');
+        $('#phone').val('');
+        $('#ddlmessage').val('');
+        $('#phone').val('');
+        $('#ddldate').val(' ');
+    });
+    
+
 });
 function validateForm(flag) {
 
@@ -17,7 +31,7 @@ function validateForm(flag) {
     } else {
         document.querySelector('.status').innerHTML = "";
         flag = true;
-      
+
     }
 
     var lastname = document.getElementById('last').value;
@@ -27,7 +41,7 @@ function validateForm(flag) {
     } else {
         document.querySelector('.status').innerHTML = "";
         flag = true;
-       
+
     }
 
     var email = document.getElementById('email').value;
@@ -40,9 +54,9 @@ function validateForm(flag) {
         document.querySelector('.status').innerHTML = "Email Id is not in correct format";
         return false;
     } else {
-       
+
         flag = true;
-    
+
     }
 
 
@@ -54,13 +68,13 @@ function validateForm(flag) {
         return false;
     }
     if (phone.length == 10) {
-      
+
         flag = true;
-      
+
     } else {
         document.querySelector('.status').innerHTML = "Please enter 10 digit valid phone number";
         return false;
     }
-   
+
     return flag;
 }
